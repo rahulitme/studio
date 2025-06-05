@@ -6,10 +6,20 @@ export interface Project {
   githubUrl?: string;
   deployUrl?: string;
   type: 'web' | 'mobile';
-  image?: string; // Optional image URL for the project card
+  image?: string; 
 }
 
 export const projects: Project[] = [
+  {
+    id: 'dashboard-ui',
+    title: 'Dashboard UI',
+    description: 'A modern and responsive dashboard UI created with React and ShadCN UI components, showcasing data visualization and user interface design.',
+    technologies: ['React', 'ShadCN UI', 'Tailwind CSS'],
+    githubUrl: 'https://github.com/rahulitme/Dashboard-UI',
+    deployUrl: 'https://dashboard-ui-roan.vercel.app/',
+    type: 'web',
+    image: 'https://placehold.co/600x400.png',
+  },
   {
     id: 'fit-and-finder',
     title: 'FIT AND FINDER',
@@ -17,7 +27,7 @@ export const projects: Project[] = [
     technologies: ['Flutter', 'Dart', 'Firebase'],
     githubUrl: 'https://github.com/rahulitme/Final_Year_Project',
     type: 'mobile',
-    image: 'https://placehold.co/600x400.png?text=Fit+and+Finder',
+    image: 'https://placehold.co/600x400.png',
   },
   {
     id: 'personal-portfolio',
@@ -26,7 +36,7 @@ export const projects: Project[] = [
     technologies: ['React', 'Next.js', 'Tailwind CSS'],
     githubUrl: 'https://github.com/rahulitme/myportfolio',
     type: 'web',
-    image: 'https://placehold.co/600x400.png?text=Portfolio',
+    image: 'https://placehold.co/600x400.png',
   },
   {
     id: 'grocery-app',
@@ -35,7 +45,7 @@ export const projects: Project[] = [
     technologies: ['Flutter', 'Dart', 'State Management'],
     githubUrl: 'https://github.com/rahulitme/Grocery-App',
     type: 'mobile',
-    image: 'https://placehold.co/600x400.png?text=Grocery+App',
+    image: 'https://placehold.co/600x400.png',
   },
   {
     id: 'customer-feedback-form',
@@ -45,7 +55,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/rahulitme/-customers-_survey',
     deployUrl: 'https://customers-survey-5j16.vercel.app/',
     type: 'web',
-    image: 'https://placehold.co/600x400.png?text=Feedback+Form',
+    image: 'https://placehold.co/600x400.png',
   },
   {
     id: 'traveling-web-app',
@@ -55,7 +65,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/rahulitme/Travel-web-application',
     deployUrl: 'https://travel-web-application.vercel.app/',
     type: 'web',
-    image: 'https://placehold.co/600x400.png?text=Travel+App',
+    image: 'https://placehold.co/600x400.png',
   },
   {
     id: 'clock-app',
@@ -65,7 +75,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/rahulitme/Daily_Reminder_App',
     deployUrl: 'https://welcome-aa71e.web.app',
     type: 'mobile',
-    image: 'https://placehold.co/600x400.png?text=Clock+App',
+    image: 'https://placehold.co/600x400.png',
   },
   {
     id: 'library-management-system',
@@ -74,7 +84,7 @@ export const projects: Project[] = [
     technologies: ['React', 'Node.js'],
     githubUrl: 'https://github.com/rahulitme/library-management',
     type: 'web',
-    image: 'https://placehold.co/600x400.png?text=Library+System',
+    image: 'https://placehold.co/600x400.png',
   },
   {
     id: 'weather-application',
@@ -83,8 +93,7 @@ export const projects: Project[] = [
     technologies: ['React', 'OpenWeather API'],
     githubUrl: 'https://github.com/rahulitme/Weather_Web_app',
     type: 'web',
-    image: 'https://placehold.co/600x400.png?text=Weather+App',
-
+    image: 'https://placehold.co/600x400.png',
   },
   {
     id: 'bluetooth-beacon-app',
@@ -93,7 +102,7 @@ export const projects: Project[] = [
     technologies: ['Flutter', 'Dart', 'Bluetooth API'],
     githubUrl: 'https://github.com/rahulitme/-Bluetooth-_beacon_App',
     type: 'mobile',
-    image: 'https://placehold.co/600x400.png?text=Beacon+App',
+    image: 'https://placehold.co/600x400.png',
   },
   {
     id: 'event-application',
@@ -102,7 +111,7 @@ export const projects: Project[] = [
     technologies: ['Flutter', 'Dart', 'Firebase Auth'],
     githubUrl: 'https://github.com/rahulitme/Event_Application',
     type: 'mobile',
-    image: 'https://placehold.co/600x400.png?text=Event+App',
+    image: 'https://placehold.co/600x400.png',
   },
 ];
 

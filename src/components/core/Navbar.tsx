@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Briefcase, Mail } from 'lucide-react';
+import { Briefcase, User, LayoutGrid, Mail } from 'lucide-react';
 
 export function Navbar() {
   return (
@@ -11,18 +11,24 @@ export function Navbar() {
             Rahul's Showcase
           </span>
         </Link>
-        <nav className="flex flex-1 items-center space-x-6 text-sm font-medium">
+        <nav className="flex flex-1 items-center space-x-4 sm:space-x-6 text-sm font-medium">
+          <Link
+            href="#about"
+            className="text-foreground/60 transition-colors hover:text-foreground/80 flex items-center"
+          >
+            <User className="mr-1 h-4 w-4 sm:mr-2 sm:h-5 sm:w-5" /> About
+          </Link>
           <Link
             href="#projects"
-            className="text-foreground/60 transition-colors hover:text-foreground/80"
+            className="text-foreground/60 transition-colors hover:text-foreground/80 flex items-center"
           >
-            Projects
+            <LayoutGrid className="mr-1 h-4 w-4 sm:mr-2 sm:h-5 sm:w-5" /> Projects
           </Link>
           <Link
             href="#contact"
-            className="text-foreground/60 transition-colors hover:text-foreground/80"
+            className="text-foreground/60 transition-colors hover:text-foreground/80 flex items-center"
           >
-            Contact
+            <Mail className="mr-1 h-4 w-4 sm:mr-2 sm:h-5 sm:w-5" /> Contact
           </Link>
         </nav>
       </div>

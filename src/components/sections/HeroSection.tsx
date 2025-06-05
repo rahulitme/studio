@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, UserCircle } from 'lucide-react';
 
 export function HeroSection() {
   return (
@@ -9,21 +9,22 @@ export function HeroSection() {
         <h1 className="font-headline text-4xl font-bold tracking-tight text-primary sm:text-5xl md:text-6xl lg:text-7xl">
           Hello! I'm Rahul Kumar
         </h1>
-        <p className="mt-6 max-w-2xl mx-auto text-lg text-foreground/80 sm:text-xl">
-          A passionate developer with experience in building web and mobile applications
-          using modern technologies. I enjoy solving complex problems and learning new skills.
-          Welcome to my portfolio!
+        <p className="mt-6 max-w-3xl mx-auto text-lg text-foreground/80 sm:text-xl md:text-2xl">
+          A passionate <span className="text-primary font-semibold">Full Stack Developer</span> crafting seamless digital experiences.
+          With expertise in React, Next.js, Flutter, and a keen eye for design, I build innovative web and mobile applications.
+          Explore my work and let's create something amazing together!
         </p>
-        <div className="mt-10 flex justify-center gap-4">
-          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+        <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg transform hover:scale-105 transition-transform duration-300">
             <Link href="#projects">
               View My Projects
               <ArrowDown className="ml-2 h-5 w-5" />
             </Link>
           </Button>
-          <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10">
-            <Link href="#contact">
-              Get In Touch
+          <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10 hover:text-primary-foreground shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <Link href="#about">
+              About Me
+              <UserCircle className="ml-2 h-5 w-5" />
             </Link>
           </Button>
         </div>

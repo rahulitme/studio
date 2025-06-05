@@ -16,14 +16,13 @@ export function Footer() {
               <Github className="h-5 w-5" />
             </Link>
           </Button>
-          {/* Add LinkedIn if available */}
-          {/* <Button variant="ghost" size="icon" asChild>
-            <Link href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <Button variant="ghost" size="icon" asChild>
+            <Link href="https://www.linkedin.com/in/rahul-kumar-191473256/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Linkedin className="h-5 w-5" />
             </Link>
-          </Button> */}
+          </Button>
           <Button variant="ghost" size="icon" asChild>
-            <Link href="mailto:rahulkumar@example.com" aria-label="Email">
+            <Link href="mailto:rahulkumar545212@gmail.com" aria-label="Email">
               <Mail className="h-5 w-5" />
             </Link>
           </Button>
