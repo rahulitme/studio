@@ -1,3 +1,4 @@
+
 export interface Project {
   id: string;
   title: string;
@@ -6,7 +7,8 @@ export interface Project {
   githubUrl?: string;
   deployUrl?: string;
   type: 'web' | 'mobile';
-  image?: string; 
+  image?: string;
+  dataAiHint?: string;
 }
 
 export const projects: Project[] = [
@@ -18,7 +20,8 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/rahulitme/Dashboard-UI',
     deployUrl: 'https://dashboard-ui-roan.vercel.app/',
     type: 'web',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://placehold.co/600x400/E0E0E0.png',
+    dataAiHint: 'dashboard data',
   },
   {
     id: 'fit-and-finder',
@@ -27,7 +30,8 @@ export const projects: Project[] = [
     technologies: ['Flutter', 'Dart', 'Firebase'],
     githubUrl: 'https://github.com/rahulitme/Final_Year_Project',
     type: 'mobile',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://placehold.co/600x400/D6EAF8.png',
+    dataAiHint: 'fashion mobile',
   },
   {
     id: 'personal-portfolio',
@@ -36,7 +40,8 @@ export const projects: Project[] = [
     technologies: ['React', 'Next.js', 'Tailwind CSS'],
     githubUrl: 'https://github.com/rahulitme/myportfolio',
     type: 'web',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://placehold.co/600x400/D1F2EB.png',
+    dataAiHint: 'portfolio website',
   },
   {
     id: 'grocery-app',
@@ -45,7 +50,8 @@ export const projects: Project[] = [
     technologies: ['Flutter', 'Dart', 'State Management'],
     githubUrl: 'https://github.com/rahulitme/Grocery-App',
     type: 'mobile',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://placehold.co/600x400/FDEDEC.png',
+    dataAiHint: 'ecommerce mobile',
   },
   {
     id: 'customer-feedback-form',
@@ -55,7 +61,8 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/rahulitme/-customers-_survey',
     deployUrl: 'https://customers-survey-5j16.vercel.app/',
     type: 'web',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://placehold.co/600x400/FCF3CF.png',
+    dataAiHint: 'feedback form',
   },
   {
     id: 'traveling-web-app',
@@ -65,7 +72,8 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/rahulitme/Travel-web-application',
     deployUrl: 'https://travel-web-application.vercel.app/',
     type: 'web',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://placehold.co/600x400/E8DAEF.png',
+    dataAiHint: 'travel booking',
   },
   {
     id: 'clock-app',
@@ -75,7 +83,8 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/rahulitme/Daily_Reminder_App',
     deployUrl: 'https://welcome-aa71e.web.app',
     type: 'mobile',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://placehold.co/600x400/D5F5E3.png',
+    dataAiHint: 'reminder clock',
   },
   {
     id: 'library-management-system',
@@ -84,7 +93,8 @@ export const projects: Project[] = [
     technologies: ['React', 'Node.js'],
     githubUrl: 'https://github.com/rahulitme/library-management',
     type: 'web',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://placehold.co/600x400/FAE5D3.png',
+    dataAiHint: 'library system',
   },
   {
     id: 'weather-application',
@@ -93,7 +103,8 @@ export const projects: Project[] = [
     technologies: ['React', 'OpenWeather API'],
     githubUrl: 'https://github.com/rahulitme/Weather_Web_app',
     type: 'web',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://placehold.co/600x400/CFD8DC.png',
+    dataAiHint: 'weather forecast',
   },
   {
     id: 'bluetooth-beacon-app',
@@ -102,7 +113,8 @@ export const projects: Project[] = [
     technologies: ['Flutter', 'Dart', 'Bluetooth API'],
     githubUrl: 'https://github.com/rahulitme/-Bluetooth-_beacon_App',
     type: 'mobile',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://placehold.co/600x400/FDEBD0.png',
+    dataAiHint: 'bluetooth beacon',
   },
   {
     id: 'event-application',
@@ -111,7 +123,8 @@ export const projects: Project[] = [
     technologies: ['Flutter', 'Dart', 'Firebase Auth'],
     githubUrl: 'https://github.com/rahulitme/Event_Application',
     type: 'mobile',
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://placehold.co/600x400/EAEDED.png',
+    dataAiHint: 'event mobile',
   },
 ];
 

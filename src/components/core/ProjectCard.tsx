@@ -74,17 +74,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
     return <Lightbulb className="inline-block mr-1 h-3 w-3" />;
   }
 
-  const getAIDataHint = (project: Project) => {
-    let hint = project.type;
-    if (project.technologies && project.technologies.length > 0) {
-      const firstTech = project.technologies[0].toLowerCase();
-      if (firstTech.includes('flutter')) hint += ' mobile';
-      else if (firstTech.includes('react') || firstTech.includes('next')) hint += ' webapp';
-      else hint += ` ${firstTech.split(' ')[0]}`;
-    }
-    return hint.split(' ').slice(0, 2).join(' ');
-  }
-
   // Effect to prevent hydration mismatch for random values or browser-specific APIs
   useEffect(() => {
     // Any client-side only logic can go here if needed
@@ -109,7 +98,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               layout="fill"
               objectFit="cover"
               className="transform group-hover:scale-110 transition-transform duration-500 ease-in-out"
-              data-ai-hint={getAIDataHint(project)}
+              data-ai-hint={project.dataAiHint || 'placeholder image'}
             />
              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                 <div className="bg-black/50 backdrop-blur-sm text-white p-2 rounded-md opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 ease-in-out flex items-center">
