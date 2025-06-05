@@ -1,3 +1,4 @@
+
 'use client';
 
 import { allTechnologies, allProjectTypes } from '@/data/projects';
@@ -81,7 +82,7 @@ export function ProjectFilter({
               <SelectValue placeholder="All Types" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">All Types</SelectItem>
+              {/* <SelectItem value="">All Types</SelectItem>  This line was causing the error */}
               {allProjectTypes.map((type) => (
                 <SelectItem key={type} value={type} className="capitalize">
                   {type}
