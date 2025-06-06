@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -8,7 +9,7 @@ export function AboutSection() {
   return (
     <section id="about" className="py-16 md:py-24 bg-background">
       <div className="container max-w-4xl mx-auto">
-        <Card className="shadow-xl rounded-lg overflow-hidden">
+        <Card className="shadow-xl rounded-lg overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-1">
           <CardHeader className="text-center bg-secondary/30 p-8">
             <Smile className="mx-auto h-12 w-12 text-primary mb-4" />
             <CardTitle className="font-headline text-3xl font-bold text-primary sm:text-4xl">
@@ -20,7 +21,7 @@ export function AboutSection() {
               <div className="md:col-span-1 flex justify-center">
                 <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg border-4 border-primary">
                   <Image
-                    src="/rahul-kumar.jpg" 
+                    src="/rahul-kumar.jpg"
                     alt="Rahul Kumar"
                     layout="fill"
                     objectFit="cover"
@@ -37,16 +38,16 @@ export function AboutSection() {
                   I thrive on tackling complex challenges and continuously expanding my skillset to deliver innovative and high-quality software solutions. My passion lies in transforming ideas into tangible products that provide exceptional user experiences.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                  <div className="flex items-center space-x-3">
-                    <GraduationCap className="h-6 w-6 text-accent" />
+                  <div className="flex items-center space-x-3 group cursor-default">
+                    <GraduationCap className="h-6 w-6 text-accent group-hover:text-primary transition-all duration-200 group-hover:scale-110" />
                     <span className="text-foreground/90">B.Tech CSE, Acharya Institute of Technology</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <MapPin className="h-6 w-6 text-accent" />
+                  <div className="flex items-center space-x-3 group cursor-default">
+                    <MapPin className="h-6 w-6 text-accent group-hover:text-primary transition-all duration-200 group-hover:scale-110" />
                     <span className="text-foreground/90">Bangalore, India</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <Briefcase className="h-6 w-6 text-accent" />
+                  <div className="flex items-center space-x-3 group cursor-default">
+                    <Briefcase className="h-6 w-6 text-accent group-hover:text-primary transition-all duration-200 group-hover:scale-110" />
                     <span className="text-foreground/90">Full Stack Developer</span>
                   </div>
                 </div>
