@@ -10,7 +10,7 @@ export function HeroSection() {
           Hello! I'm Rahul Kumar
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg text-foreground/80 sm:text-xl md:text-2xl">
-          A passionate <span className="text-primary font-semibold">Full Stack Developer</span> crafting seamless digital experiences.
+          A passionate <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary font-semibold">Full Stack Developer</span> crafting seamless digital experiences.
           With expertise in React, Next.js, Flutter, and a keen eye for design, I build innovative web and mobile applications.
           Explore my work and let's create something amazing together!
         </p>
