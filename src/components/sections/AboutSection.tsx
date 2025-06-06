@@ -29,13 +29,17 @@ export function AboutSection() {
     <section id="about" className="py-16 md:py-24 bg-background">
       <div className="container max-w-4xl mx-auto">
         <Card className={cn(
-          "shadow-xl rounded-lg overflow-hidden",
-          "hover:shadow-2xl hover:-translate-y-1", // Existing hover
-          getTransitionClasses() // Entrance animation for the card itself
+          "shadow-xl rounded-lg overflow-hidden", // Base visual style
+          // Hover effects:
+          "hover:border-primary/60", // Change border color on hover
+          "hover:shadow-2xl hover:shadow-primary/20", // Enhance shadow with a primary tint
+          "hover:-translate-y-1.5", // Slightly more lift
+          "transition-all duration-300 ease-out", // Smooth transition for hover states
+          getTransitionClasses() // Entrance animation (handles opacity and initial translate-y)
         )}>
           <CardHeader className={cn(
             "text-center bg-secondary/30 p-8",
-             // No separate transition for header, it's part of the card
+             // Entrance animation is part of the card's children
           )}>
             <Smile className={cn(
               "mx-auto h-12 w-12 text-primary mb-4",
@@ -52,15 +56,16 @@ export function AboutSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               <div className={cn("md:col-span-1 flex justify-center", getTransitionClasses('delay-300'))}>
                 <div className={cn(
-                  "relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg border-4 border-primary",
-                  "transform hover:scale-105 transition-transform duration-300" // Existing hover
+                  "relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg",
+                  "border-4 border-primary", // Base border
+                  "hover:border-accent hover:scale-105", // Hover: change border color to accent, scale up
+                  "transition-all duration-300 ease-in-out" // Smooth transition for hover effects
                 )}>
                   <Image
                     src="/rahul-kumar.jpg"
                     alt="Rahul Kumar"
                     layout="fill"
                     objectFit="cover"
-                    className="transform hover:scale-105 transition-transform duration-300" 
                     data-ai-hint="portrait person"
                   />
                 </div>
@@ -79,7 +84,7 @@ export function AboutSection() {
                     { icon: Briefcase, text: "Full Stack Developer", delay: 'delay-[700ms]' },
                   ].map((item, index) => (
                     <div key={index} className={cn("flex items-center space-x-3 group cursor-default", getTransitionClasses(item.delay))}>
-                      <item.icon className="h-6 w-6 text-accent group-hover:text-primary transition-all duration-200 group-hover:scale-110" />
+                      <item.icon className="h-6 w-6 text-accent group-hover:text-primary transition-all duration-300 group-hover:scale-110" />
                       <span className="text-foreground/90">{item.text}</span>
                     </div>
                   ))}
