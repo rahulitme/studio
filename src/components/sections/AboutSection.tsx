@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -70,14 +69,15 @@ export function AboutSection() {
               </div>
               <div className="md:col-span-2 space-y-6">
                 <p className={cn("text-lg text-foreground/80 leading-relaxed", getTransitionClasses('delay-[400ms]'))}>
-                  I'm Rahul Kumar, a dedicated and enthusiastic B.Tech graduate in Computer Science and Engineering from Acharya Institute of Technology, Bangalore. With a strong foundation in web and mobile development, I specialize in creating dynamic and responsive applications using technologies like React, Next.js, Flutter, and Firebase.
+                  I'm Rahul Kumar, a dedicated and enthusiastic MCA graduate  from 
+                  Visvesvaraya Technological University, With a strong foundation in web and mobile development, I specialize in creating dynamic and responsive applications using technologies like React, Next.js, Flutter, and Firebase.
                 </p>
                 <p className={cn("text-lg text-foreground/80 leading-relaxed", getTransitionClasses('delay-[500ms]'))}>
                   I thrive on tackling complex challenges and continuously expanding my skillset to deliver innovative and high-quality software solutions. My passion lies in transforming ideas into tangible products that provide exceptional user experiences.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                   {[
-                    { icon: GraduationCap, text: "B.Tech CSE, Acharya Institute of Technology", delay: 'delay-[600ms]' },
+                    { icon: GraduationCap, text: "MCA, Visvesvaraya Technological University" , delay: 'delay-[600ms]' },
                     { icon: MapPin, text: "Bangalore, India", delay: 'delay-[650ms]' },
                     { icon: Briefcase, text: "Full Stack Developer", delay: 'delay-[700ms]' },
                   ].map((item, index) => (
