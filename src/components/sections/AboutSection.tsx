@@ -59,10 +59,11 @@ export function AboutSection() {
                   "transition-all duration-300 ease-in-out"
                 )}>
                   <Image
-                    src="/rahul-kumar.jpg"
+                    src="/src/img.jpg"
                     alt="Rahul Kumar"
-                    layout="fill"
-                    objectFit="cover"
+                    width={256}
+                    height={256}
+                    style={{ objectFit: "cover" }}
                     data-ai-hint="portrait person"
                   />
                 </div>
