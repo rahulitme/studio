@@ -1,3 +1,4 @@
+import { gemini } from "@genkit-ai/googleai";
 
 export interface Project {
   id: string;
@@ -126,7 +127,43 @@ export const projects: Project[] = [
     image: 'https://placehold.co/600x400/EAEDED.png',
     dataAiHint: 'event mobile',
   },
+    {
+    id: 'Blog Application',
+    title: 'Blog Application',
+    description: 'A full-stack blog application featuring CRUD operations for creating, reading, updating, and deleting blog posts. Built with modern web technologies for seamless content management.',
+    technologies: ['react','nodejs','mongodb','express'],
+    deployUrl:'https://v0-blog-website-requirements-rho.vercel.app/',
+    githubUrl: 'https://github.com/rahulitme/Crud-operations',
+    type: 'web',
+    image: 'https://placehold.co/600x400/EAEDED.png',
+    dataAiHint: 'blog content',
+  },{
+    id: 'Hotel Booking',
+    title: 'Hotel Management',
+    description: 'A comprehensive hotel management system that allows users to browse available rooms, make reservations, and manage bookings. Features an intuitive interface for both guests and hotel administrators.',
+    technologies: ['react','nodejs','mongodb','express'],
+    deployUrl:'https://rahulitme.github.io/Hotel-Management/',
+    githubUrl: ' https://github.com/rahulitme/Hotel-Management',
+    type: 'web',
+    image: 'https://placehold.co/600x400/EAEDED.png',
+    dataAiHint: 'hotel booking',
+  },
+
+  {
+    id: 'Movie recommnedation',
+    title: 'Movie Recommendation',
+    description: 'An intelligent movie recommendation system powered by AI that suggests personalized movies based on user preferences and viewing history. Features movie search, ratings, and detailed information.',
+    technologies: ['react','imdb','geminiapi'],
+    deployUrl:'https://gemini-movie-verse.vercel.app//',
+    githubUrl: ' https://github.com/rahulitme/gemini-movie-verse',
+    type: 'web',
+    image: 'https://placehold.co/600x400/EAEDED.png',
+    dataAiHint: 'movie recommendation',
+  },
+
+
 ];
+
 
 export const allTechnologies = Array.from(new Set(projects.flatMap(p => p.technologies))).sort();
 export const allProjectTypes = Array.from(new Set(projects.map(p => p.type))).sort();
