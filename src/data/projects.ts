@@ -161,6 +161,29 @@ export const projects: Project[] = [
     dataAiHint: 'movie recommendation',
   },
 
+  {
+    id: 'interview-schedule-web-app',
+    title: 'Interview Schedule Web App',
+    description: 'A web application for scheduling and managing interviews. It allows users to book, reschedule, and cancel interviews while providing notifications and reminders.',
+    technologies: ['React', 'Node.js', 'MongoDB'],
+    deployUrl: 'https://interview-schedule-web-app.vercel.app//',
+    githubUrl: 'https://github.com/rahulitme/interview-schedule-web-app',
+    type: 'web',
+    image: 'https://placehold.co/600x400/EAEDED.png',
+    dataAiHint: 'interview scheduling',
+  },
+  {
+    id: 'staff-profile-management',
+    title: 'Staff Profile Management',
+    description: 'A web application for managing staff profiles, including creating, viewing, and updating staff information.',
+    technologies: ['React', 'Tailwind CSS'],
+    deployUrl: 'https://v0-vite-react-setup-ten.vercel.app/',
+    githubUrl: 'https://github.com/rahulitme/Staff-profile-Create',
+    type: 'web',
+    image: 'https://placehold.co/600x400/EAEDED.png',
+    dataAiHint: 'staff management',
+  },
+
 
 ];
 

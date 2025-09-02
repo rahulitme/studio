@@ -49,3 +49,6 @@ const generateProjectImageFlow = ai.defineFlow(
     return { imageDataUri: media.url };
   }
 );
+
+// Set the GEMINI_API_KEY environment variable
+process.env.GEMINI_API_KEY = "AIzaSyCjW9hBbQ2T5tAhmdiszxlyIgwPxfOtFLI";

@@ -69,13 +69,15 @@ export function AboutSection() {
                 </div>
               </div>
               <div className="md:col-span-2 space-y-6">
-                <p className={cn("text-lg text-foreground/80 leading-relaxed", getTransitionClasses('delay-[400ms]'))}>
-                  I'm Rahul Kumar, a dedicated and enthusiastic MCA graduate  from 
-                  Visvesvaraya Technological University, With a strong foundation in web and mobile development, I specialize in creating dynamic and responsive applications using technologies like React, Next.js, Flutter, and Firebase.
-                </p>
-                <p className={cn("text-lg text-foreground/80 leading-relaxed", getTransitionClasses('delay-[500ms]'))}>
-                  I thrive on tackling complex challenges and continuously expanding my skillset to deliver innovative and high-quality software solutions. My passion lies in transforming ideas into tangible products that provide exceptional user experiences.
-                </p>
+           <p className={cn("text-lg text-foreground/80 leading-relaxed", getTransitionClasses('delay-[400ms]'))}>
+  I'm Rahul Kumar, a dedicated and enthusiastic MCA graduate from 
+  Visvesvaraya Technological University. With a strong foundation in web and mobile development, I specialize in creating dynamic and responsive applications using technologies like React, Next.js, Flutter, and Firebase. 
+  I also have <span className="font-semibold">6 months of experience as a Frontend Developer at Zylentrix</span>, where I gained hands-on expertise in building modern, scalable, and user-friendly web applications.
+</p>
+<p className={cn("text-lg text-foreground/80 leading-relaxed", getTransitionClasses('delay-[500ms]'))}>
+  I thrive on tackling complex challenges and continuously expanding my skillset to deliver innovative and high-quality software solutions. My passion lies in transforming ideas into tangible products that provide exceptional user experiences.
+</p>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                   {[
                     { icon: GraduationCap, text: "MCA, Visvesvaraya Technological University" , delay: 'delay-[600ms]' },
