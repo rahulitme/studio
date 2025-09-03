@@ -23,10 +23,17 @@ export function HeroSection() {
               <ArrowDown className="ml-2 h-5 w-5" />
             </Link>
           </Button>
-          <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10 hover:text-primary-foreground shadow-lg transform hover:scale-105 transition-transform duration-300">
+             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg transform hover:scale-105 transition-transform duration-300">
             <Link href="#about">
               About Me
               <UserCircle className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <Link href="src/resume.pdf" download>
+              Download Resume
+                 <ArrowDown className="ml-2 h-5 w-5" />
             </Link>
           </Button>
         </div>
