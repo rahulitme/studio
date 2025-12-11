@@ -70,7 +70,7 @@ export function AboutSection() {
               </div>
               <div className="md:col-span-2 space-y-6">
            <p className={cn("text-lg text-foreground/80 leading-relaxed", getTransitionClasses('delay-[400ms]'))}>
-  I'm Rahul Kumar, a dedicated and enthusiastic MCA graduate from 
+ a dedicated and enthusiastic MCA graduate from 
   Visvesvaraya Technological University. With a strong foundation in web and mobile development, I specialize in creating dynamic and responsive applications using technologies like React, Next.js, Flutter, and Firebase. 
   I also have <span className="font-semibold">1 years of experience </span>, where I gained hands-on expertise in building modern, scalable, and user-friendly web applications.
 </p>

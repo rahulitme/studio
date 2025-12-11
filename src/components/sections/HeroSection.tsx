@@ -11,9 +11,9 @@ export function HeroSection() {
         </h1>
       <p className="mt-6 max-w-3xl mx-auto text-lg text-foreground/80 sm:text-xl md:text-2xl">
   A passionate <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary font-semibold">Full Stack Developer</span> crafting seamless digital experiences.
-  With expertise in React, Next.js, Flutter, and a keen eye for design, I build innovative web and mobile applications.
-  I also have <span className="font-semibold">6 months of experience as a Frontend Developer at Zylentrix</span>, where I honed my skills in building modern, responsive web solutions.
-  Explore my work and let's create something amazing together!
+  With expertise in React, Next.js, or MERN  Flutter, and a keen eye for design, I build innovative web and mobile applications.
+  I also have <span className="font-semibold">1 year of experience as a Frontend Developer </span>, where I honed my skills in building modern, responsive web solutions.
+  Explore my work and let's create something amazing together 
 </p>
 
         <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -31,7 +31,7 @@ export function HeroSection() {
           </Button>
 
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg transform hover:scale-105 transition-transform duration-300">
-            <Link href="src/resume.pdf" download>
+            <Link href="src/rahul_resume.pdf" download>
               Download Resume
                  <ArrowDown className="ml-2 h-5 w-5" />
             </Link>
