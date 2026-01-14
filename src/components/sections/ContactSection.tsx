@@ -49,9 +49,10 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-secondary/30">
-      <div className="container max-w-4xl mx-auto">
-        <Card className="shadow-xl rounded-lg">
+    <section id="contact" className="section relative overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 opacity-40 bg-grid" />
+      <div className="container-narrow max-w-4xl mx-auto relative">
+        <Card className="shadow-xl rounded-lg bg-card/80 backdrop-blur">
           <CardHeader className="text-center">
             <MailCheck className="mx-auto h-12 w-12 text-primary mb-4" />
             <CardTitle className="font-headline text-3xl font-bold text-primary sm:text-4xl">Get In Touch</CardTitle>

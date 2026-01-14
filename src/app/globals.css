@@ -98,5 +98,44 @@
   }
   body {
     @apply bg-background text-foreground font-body antialiased;
+    background-image:
+      radial-gradient(1200px 600px at 15% 10%, hsl(var(--primary) / 0.12), transparent 55%),
+      radial-gradient(900px 500px at 85% 25%, hsl(var(--accent) / 0.12), transparent 55%),
+      radial-gradient(900px 500px at 45% 90%, hsl(var(--primary) / 0.08), transparent 55%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.35);
+    color: hsl(var(--foreground));
+  }
+
+  /* Nicer default focus for non-shadcn elements */
+  :where(a, button, input, textarea, select):focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.35) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.35) 1px, transparent 1px);
+    background-size: 28px 28px;
+    mask-image: radial-gradient(ellipse at center, black 55%, transparent 75%);
+  }
+
+  .text-gradient {
+    @apply text-transparent bg-clip-text;
+    background-image: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--primary)));
+  }
+
+  .section {
+    @apply w-full py-16 md:py-24;
+  }
+
+  .container-narrow {
+    @apply container max-w-5xl;
   }
 }

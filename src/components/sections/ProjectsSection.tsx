@@ -24,8 +24,8 @@ export function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="py-16 md:py-24 bg-background">
-      <div className="container">
+    <section id="projects" className="section">
+      <div className="container-narrow">
         <div className="mb-12 text-center">
           <h2 className="font-headline text-3xl font-bold text-primary sm:text-4xl md:text-5xl flex items-center justify-center">
             <LayoutGrid className="mr-3 h-8 w-8 sm:h-10 sm:w-10" />
